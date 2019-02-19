@@ -12,8 +12,8 @@ def prime?(number)
   end 
   
   if array.length > 2 
-    return false 
+    return array 
   else 
-    true 
+    array
   end 
 end
