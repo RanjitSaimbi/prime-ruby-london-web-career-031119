@@ -3,7 +3,7 @@ def prime?(number)
   factor = 2 
   
   while number > 1 
-   if number % factor === 2 
+   if number % factor === 0  
      array.push(factor)
      number /= factor
     else 
