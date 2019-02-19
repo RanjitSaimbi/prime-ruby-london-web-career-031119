@@ -1,19 +1,9 @@
-def prime?(number)
-  array = []
-  factor = 2 
-  
-  while number > 1 
-   if number % factor === 0  
-     array.push(factor)
-     number /= factor
-    else 
-     factor += 1 
-    end
-  end 
-  
-  if array.length > 2 
-    return false 
-  else 
-    true 
-  end 
-end
+def prime?(num)
+  (2..(num - 1)).each do |n|
+    return false if num % n == 0
+  end
+  if num <= 1
+    return false
+  end
+  true
+en
